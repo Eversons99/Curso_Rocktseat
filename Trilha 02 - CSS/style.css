@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+/*header {
+    padding: 20px;
+    height: 100px;
+    border: 4px dashed red;
+}
+*/
+main {
+    color: white;
+    background-color: rgb(55, 100, 50);
+    background-image: url(alerta.png);
+    background-repeat: no-repeat; /*Faz com que a img não se repita, podemos aplicar o repeat y para repetir a imagem no eixo y*/
+    /*background-position nos permite mudar o eixo horizontal e vertical*/
+    background-position: center;
+    /*background-size nos permite mudar o tamanho da imagem no eixo horizontal e vertical*/
+    background-size: contain;
+    /*background-origin define de onde a img começa, temos os valores border-box, content-box, padding-box*/
+    background-origin: content-box;
+    background-clip: content-box;
+    /*Faz a img ficar fixa ao realizar o scroll da pagina*/
+    background-attachment: fixed;
+    background: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2)), 
+    url(alerta.png) no-repeat right top / 50px border-box content-box fixed;
+}

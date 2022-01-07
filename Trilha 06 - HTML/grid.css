@@ -1,0 +1,44 @@
+body {
+    display: grid;
+    margin: 0;
+    height:100vh;
+    grid-template-areas: 
+    "header header" /*Aqui estou definindo uma linha entre aspas e cada nome significa uma coluna*/
+    "main aside"
+    "footer footer";
+
+    /*Delimitando o espaçamento das linhas 30px para primeira*/
+    /*Delimitando o espaçamento das linhas 1fr fração resposiva que ocupará todo espço vazio para segunda*/
+    /*Delimitando o espaçamento das linhas 40px para terceira*/
+    grid-template-rows: 30px 1fr 40px; 
+
+    /*Delimitando o espaçamento das colunas 1fr fração resposiva que ocupará todo espço vazio para primeira e 80px para segunda coluna*/
+    grid-template-columns: 1fr 80px;
+
+}
+
+header {
+    background-color:green;
+    grid-area: header; /*Indicando a area de habitação deste elemento dentro do grid*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+main {
+    background-color:red;
+    grid-area: main;
+}
+
+aside {
+    background-color:blue;
+    grid-area: aside;
+
+    text-align: center;
+}
+
+footer {
+    background-color:grey;
+    grid-area: footer;
+}

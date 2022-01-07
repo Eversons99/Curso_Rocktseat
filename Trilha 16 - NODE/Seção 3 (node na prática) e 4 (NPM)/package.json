@@ -1,0 +1,11 @@
+{
+  "name": "qualquer-nome",
+  "version": "1.0.0",
+  "description": "Aprendendo node",
+  "main": "index.js",
+  "scripts": {
+    "test": " node index.js"
+  },
+  "author": "Everson Alves",
+  "license": "ISC"
+}
